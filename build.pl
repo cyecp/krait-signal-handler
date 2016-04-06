@@ -7,8 +7,8 @@ use warnings;
 
 sub BuildAndroid
 {
-	PrepareAndroidSDK::GetAndroidSDK(undef, undef, "r10e”);
-	system('$ANDROID_NDK_ROOT/ndk-build clean');
+	PrepareAndroidSDK::GetAndroidSDK(undef, undef, "r10e");
+	#system('$ANDROID_NDK_ROOT/ndk-build clean');
 	system('$ANDROID_NDK_ROOT/ndk-build');
 }
 
